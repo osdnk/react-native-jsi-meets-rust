@@ -59,7 +59,7 @@ const App = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Summing up in Rust">
+          <Section title="Add in Rust">
             2 + 2 = {global.addInRust(2, 2)}
           </Section>
         </View>
