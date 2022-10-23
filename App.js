@@ -8,6 +8,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import RustModule from './RustModule';
 
 import {Colors, Header} from 'react-native/Libraries/NewAppScreen';
 
@@ -60,7 +61,7 @@ const App = () => {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="Add in Rust">
-            2 + 2 = {global.addInRust(2, 2)}
+            2 + 2 = {RustModule.add(2, 2)}
           </Section>
         </View>
       </ScrollView>
